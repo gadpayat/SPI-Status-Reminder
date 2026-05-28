@@ -1,10 +1,9 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html>
 <head>
   <title>Reminder Prompt</title>
 
   <style>
-
     body{
       margin:0;
       font-family:Arial, sans-serif;
@@ -34,7 +33,6 @@
     /* Container */
     #container{
       width:100%;
-      transition:opacity 2s ease;
     }
 
     /* Banner */
@@ -69,7 +67,7 @@
 
   <div id="reminderBanner">
     <div id="movingText">
-      ⏰ REMINDER: Reminder: Update the Sub-Project Implementation Status (SPI) every Thursday.
+      ⏰ REMINDER: Updating of the Sub-Project Implementation Status (SPI) is every Thursday until 11:59 PM.
       Including reviewing progress, checking for issues or delays, and ensuring all sub-project statuses are current and accurate.
     </div>
   </div>
@@ -77,28 +75,14 @@
 </div>
 
 <script>
-
 window.onload = () => {
-
-  // Optional quick alert (can remove if not needed)
+  // Optional alert (still stays)
   alert("⏰ Reminder Activated!");
-
-  // Auto remove after 15 seconds
-  setTimeout(() => {
-
-    const container =
-    document.getElementById("container");
-
-    container.style.opacity = "0";
-
-    setTimeout(() => {
-      container.style.display = "none";
-    }, 2000);
-
-  }, 15000);
-
 };
+</script>
 
+</body>
+</html>
 </script>
 
 </body>
